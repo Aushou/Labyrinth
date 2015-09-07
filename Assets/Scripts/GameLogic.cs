@@ -13,16 +13,19 @@ public class GameLogic : MonoBehaviour {
 	private int curTurn = 1;		//Current turn. May not be useful, but it's here
 	//private GameObject curTile;	//Set by DrawTile function	
 	private List <GameObject> tileDeck = new List<GameObject>();		//The deck of tiles
+	private Camera mainCam;			//Reference to camera component of the Main Camera object
+	private GameObject tempGhost;
 
 	// Use this for initialization 
 	void Start () {
-	
+		mainCam = GetComponentInChildren<Camera> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		//while (turnStage == 0 || turnStage == 1) {
+			//Destroy (tempGhost);
 			PlaceTile(testTile);
 		//}
 
@@ -42,19 +45,21 @@ public class GameLogic : MonoBehaviour {
 	//INPUT: GameObject referencing drawn tile
 	//OUTPUT: Nada
 	//DESCRIPTION: ALlows the player to select a grid point and place a tile down. Should display a blue ghost for valid tile
-	//placement, and a red ghost for invalid. Should check all adjacent tiles to ensure it will match up with the hallways
+	//placement, and a red ghost for invalid.
 
-		GameObject tempGhost = ghostTile;
-		Vector2 mousePos = Input.mousePosition;  //NOTE: Needs to convert to worldPos...
+		Vector3 mousePos = mainCam.ScreenToWorldPoint (Input.mousePosition);
+		Vector2 mousePos2D;
+		bool adjacent = false;
+		bool overlap = false;
+		bool valid = false;
 
+		mousePos.z = 0;
 		mousePos.x = Mathf.RoundToInt (mousePos.x);
 		mousePos.y = Mathf.RoundToInt (mousePos.y);
-		Debug.Log (mousePos);
+		mousePos2D.x = mousePos.x;
+		mousePos2D.y = mousePos.y;
 
-		if (Input.GetKeyDown (KeyCode.S)){
-			turnStage++;
-		}
-
+		tempGhost = (GameObject)Instantiate (ghostTile, mousePos, Quaternion.identity);
 	}
 
 	GameObject DrawTile() {
