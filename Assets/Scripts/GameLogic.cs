@@ -16,6 +16,13 @@ public class GameLogic : MonoBehaviour {
 	private Camera mainCam;			//Reference to camera component of the Main Camera object
 	private GameObject tempGhost;
 
+	//DECK VARIABLES
+	int numCross = 138;
+	int numTee = 138;
+	int numStraight = 156;
+	int numBend = 96;
+	int numDead = 96;
+
 	// Use this for initialization 
 	void Start () {
 		mainCam = GetComponentInChildren<Camera> ();
@@ -26,7 +33,7 @@ public class GameLogic : MonoBehaviour {
 
 		//while (turnStage == 0 || turnStage == 1) {
 			//Destroy (tempGhost);
-			PlaceTile(testTile);
+			PlaceGhost(testTile);
 		//}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {		//Space to skip/end turn and move to the next player
@@ -41,7 +48,7 @@ public class GameLogic : MonoBehaviour {
 		}
 	}
 
-	void PlaceTile(GameObject curTile) {
+	void PlaceGhost(GameObject curTile) {
 	//INPUT: GameObject referencing drawn tile
 	//OUTPUT: Nada
 	//DESCRIPTION: ALlows the player to select a grid point and place a tile down. Should display a blue ghost for valid tile
@@ -49,9 +56,6 @@ public class GameLogic : MonoBehaviour {
 
 		Vector3 mousePos = mainCam.ScreenToWorldPoint (Input.mousePosition);
 		Vector2 mousePos2D;
-		bool adjacent = false;
-		bool overlap = false;
-		bool valid = false;
 
 		mousePos.z = 0;
 		mousePos.x = Mathf.RoundToInt (mousePos.x);
@@ -72,12 +76,18 @@ public class GameLogic : MonoBehaviour {
 		return curTile;
 	}
 
-	void ShuffleDeck() {
-	//INPUT: Nothing
-	//OUTPUT: Dreams
-	//DESCRIPTION: Initialises and shuffles the deck of tiles
+	void CreateDeck(){
+	//INPUT: Emotion
+	//OUTPUT: The infintesimal horrors of the Warp
+	//DESCRIPTION: Creates the deck of tiles as per specification
 
+	}
 
+	void DrawTile(){
+	//INPUT: Something clever
+	//OUPUT: Not clever at all
+	//DESCRIPTION: Draws a tile from the deck of tiles, and reduces the count of that remaining card type. This way
+	//tiles aren't instantiated until they're needed, and can be randomly selected and depleted like an actual deck.
 
 	}
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlacementGhost : MonoBehaviour {
 
-	private SpriteRenderer mySprite;
+	public SpriteRenderer mySprite;
 
 	// Use this for initialization
 	void Start () {
@@ -30,12 +30,12 @@ public class PlacementGhost : MonoBehaviour {
 		adjacent = Physics2D.CircleCast (myPos , 0.51f, Vector2.right, 0f);
 		overlap = Physics2D.CircleCast (myPos, 0.25f, Vector2.right, 0f);
 
-		if (!adjacent || overlap) {
-			mySprite.color = Color.red;
-			valid = false;
-		} else {
-			mySprite.color = Color.blue;
+		if (adjacent && !overlap) {
 			valid = true;
+			mySprite.color = Color.blue;
+		} else {
+			valid = false;
+			mySprite.color = Color.red;
 		}
 		
 		if (valid && Input.GetMouseButtonDown (0)) {
@@ -44,7 +44,7 @@ public class PlacementGhost : MonoBehaviour {
 			//turnStage++;
 		}
 
-		Debug.Log ("Adjacent: " + adjacent + ", Overlap: " + overlap);
+		//Debug.Log ("Adjacent: " + adjacent + ", Overlap: " + overlap);
 
 	}
 }
