@@ -29,15 +29,15 @@ public class PlacementGhost : MonoBehaviour {
 	void PlacementMode() {
 	//INPUT: -
 	//OUTPUT: ~
-	//DESCRIPTION: Checks if it's current location is a valid spot for a tile. Places tile when clicked. Probably should take the
-	//current tile as input actually but we'll get there...
+	//DESCRIPTION: Checks if it's current location is a valid spot for a tile. Places tile when clicked. 
 
 		bool adjacent = false;
 		bool overlap = false;
 		bool valid = false;
+		bool[] validSides = new bool[4];
 		Vector2 myPos = GetComponent<Transform> ().position;
 
-		adjacent = Physics2D.CircleCast (myPos , 0.51f, Vector2.right, 0f);
+		adjacent = Physics2D.CircleCast (myPos , 0.7f, Vector2.right, 0f);
 		overlap = Physics2D.CircleCast (myPos, 0.25f, Vector2.right, 0f);
 
 		if (Input.GetKeyDown (KeyCode.R)) {
@@ -48,13 +48,32 @@ public class PlacementGhost : MonoBehaviour {
 		}
 
 		if (adjacent && !overlap) {
+			//If it fits the initial constraints, starts checking if pathways match  up
+			RaycastHit2D hit;
+			//Ray2D ray = Physics2D.Raycast (myPos, Vector2.up, 0.7f);
+
+			if (Physics2D.Raycast(myPos, Vector2.up, 0.7f)){
+				hit = Physics2D.Raycast (myPos, Vector2.up, 0.7f);
+				//Debug.Log (hit.transform.gameObject.GetComponent<Tile>().south);
+				validSides[0] = hit.transform.gameObject.GetComponent<Tile>().GetSouth () && myType.GetComponent<Tile>().GetNorth();
+			} else {
+				validSides[0] = true;
+			}
+			Debug.Log ("Top alligned: " + validSides[0]);
+			//ray = Physics2D.Raycast (myPos, Vector2.right, 0.7f);
+			/*if (Physics2D.Raycast (ray, out hit)){
+				validSides[1] = hit.transform.gameObject.GetComponent<Tile>().GetWest () && myType.GetComponent<Tile>().GetEast ();
+			} else {
+				validSides[1] = true;
+			}*/
+
 			valid = true;
 			mySprite.color = Color.blue;
 		} else {
 			valid = false;
 			mySprite.color = Color.red;
 		}
-		
+
 		if (valid && Input.GetMouseButtonDown (0)) {
 			Debug.Log ("Place tile at: " + myPos);
 			Instantiate (myType , myPos, Quaternion.Euler (0, 0, (-90 * rotation)));

@@ -10,10 +10,10 @@ public class Tile : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		north = false;
-		east = false;
-		south = false;
-		west = false;
+		//north = false;
+		//east = false;
+		//south = false;
+		//west = false;
 	}
 
 	// Update is called once per frame
@@ -31,6 +31,7 @@ public class Tile : MonoBehaviour {
 
 	public bool GetSouth(){
 		return south;
+		Debug.Log ("South gate: " + south);
 	}
 
 	public bool GetWest(){
