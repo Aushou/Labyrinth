@@ -7,7 +7,7 @@ public class Tile : MonoBehaviour {
 	public bool east;
 	public bool south;
 	public bool west;
-
+	
 	// Use this for initialization
 	void Start () {
 		north = false;
@@ -15,7 +15,7 @@ public class Tile : MonoBehaviour {
 		south = false;
 		west = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
@@ -51,5 +51,9 @@ public class Tile : MonoBehaviour {
 		east = tempN;
 		south = tempE;
 		west = tempS;
+
+		GetComponent<Transform> ().Rotate (0, 0, 90);
+
+		Debug.Log ("Rotating...");
 	}
 }

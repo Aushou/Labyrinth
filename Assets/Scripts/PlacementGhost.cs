@@ -9,6 +9,8 @@ public class PlacementGhost : MonoBehaviour {
 
 
 	private GameObject myType = null;
+	int rotation = 0;
+
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +20,7 @@ public class PlacementGhost : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		GetComponent<SpriteRenderer>().sprite = myType.GetComponent<SpriteRenderer>().sprite;
 		PlacementMode ();
 		TrackMouse ();
 		//Destroy (gameObject);
@@ -39,6 +42,9 @@ public class PlacementGhost : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.R)) {
 			myType.GetComponent<Tile>().Rotate();
+			rotation ++;
+			GetComponent<Transform> ().rotation = Quaternion.Euler (0, 0, rotation * -90);
+			Debug.Log ("Rotation: " + rotation + ", By 90: " + rotation * -90);
 		}
 
 		if (adjacent && !overlap) {
@@ -51,7 +57,7 @@ public class PlacementGhost : MonoBehaviour {
 		
 		if (valid && Input.GetMouseButtonDown (0)) {
 			Debug.Log ("Place tile at: " + myPos);
-			Instantiate (myType , myPos, Quaternion.identity);
+			Instantiate (myType , myPos, Quaternion.Euler (0, 0, (-90 * rotation)));
 			//turnStage++;
 			Destroy (gameObject);
 		}
