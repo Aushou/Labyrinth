@@ -3,10 +3,10 @@ using System.Collections;
 
 public class Tile : MonoBehaviour {
 
-	private bool north;			//Booleans denoting which sides of the tile are open for passage
-	private bool east;
-	private bool south;
-	private bool west;
+	public bool north;			//Booleans denoting which sides of the tile are open for passage
+	public bool east;
+	public bool south;
+	public bool west;
 
 	// Use this for initialization
 	void Start () {
@@ -35,17 +35,6 @@ public class Tile : MonoBehaviour {
 
 	public bool GetWest(){
 		return west;
-	}
-
-	public void SetWall(){
-	//INPUT: Dreams
-	//OUTPUT: Memes
-	//DESCRIPTION: Shortcut to setting all bools to closed, making the tile a hard barrier.
-
-		north = false;
-		east = false;
-		south = false;
-		west = false;
 	}
 
 	public void Rotate(){

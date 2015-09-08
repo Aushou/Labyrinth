@@ -6,13 +6,17 @@ public class GameLogic : MonoBehaviour {
 
 	public int maxPlayers = 4;		//Max number of players. Can be set in Unity
 	public int turnStage = 0;		//Denotes first tile placement (0), second tile (1), and movement (2). 
-	public GameObject testTile;		//Tile just for testing
+	public GameObject testTile;
+	public GameObject tileCross;
+	public GameObject tileTee;
+	public GameObject tileStraight;
+	public GameObject tileBend;
+	public GameObject tileDead;
+	public GameObject tileWall;
 	public GameObject ghostTile;	//Stores the prefab for the placement ghost tile
 
 	private int curPlayer;			//The player whose turn it currently is
 	private int curTurn = 1;		//Current turn. May not be useful, but it's here
-	//private GameObject curTile;	//Set by DrawTile function	
-	private List <GameObject> tileDeck = new List<GameObject>();		//The deck of tiles
 	private Camera mainCam;			//Reference to camera component of the Main Camera object
 	private GameObject tempGhost;
 
@@ -22,6 +26,7 @@ public class GameLogic : MonoBehaviour {
 	int numStraight = 156;
 	int numBend = 96;
 	int numDead = 96;
+	int totalDeck = 0;
 
 	// Use this for initialization 
 	void Start () {
@@ -31,10 +36,11 @@ public class GameLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//while (turnStage == 0 || turnStage == 1) {
-			//Destroy (tempGhost);
-			PlaceGhost(testTile);
-		//}
+		totalDeck = numCross + numTee + numStraight + numBend + numDead;
+
+		if (Input.GetKeyDown (KeyCode.P)) {
+			PlaceGhost (testTile);
+		}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {		//Space to skip/end turn and move to the next player
 			if(curPlayer < maxPlayers){
@@ -64,30 +70,49 @@ public class GameLogic : MonoBehaviour {
 		mousePos2D.y = mousePos.y;
 
 		tempGhost = (GameObject)Instantiate (ghostTile, mousePos, Quaternion.identity);
+		tempGhost.GetComponent<PlacementGhost> ().SetCamera (mainCam);
+
+		//if (!tempGhost.GetComponent<PlacementGhost> ().TypeFlag ()) {
+			tempGhost.GetComponent<PlacementGhost> ().SetTile (DrawTile ());
+		//}
 	}
 
-	GameObject DrawTile() {
+	public GameObject DrawTile() {
 	//INPUT: Hot air
 	//OUTPUT: A GameObject referencing drawn tile
-	//DESCRIPTION: Draws a tile from the deck
-
-		GameObject curTile = null;
-		
-		return curTile;
-	}
-
-	void CreateDeck(){
-	//INPUT: Emotion
-	//OUTPUT: The infintesimal horrors of the Warp
-	//DESCRIPTION: Creates the deck of tiles as per specification
-
-	}
-
-	void DrawTile(){
-	//INPUT: Something clever
-	//OUPUT: Not clever at all
-	//DESCRIPTION: Draws a tile from the deck of tiles, and reduces the count of that remaining card type. This way
+	//DESCRIPTION:Draws a tile from the deck of tiles, and reduces the count of that remaining card type. This way
 	//tiles aren't instantiated until they're needed, and can be randomly selected and depleted like an actual deck.
 
+		GameObject curTile;
+		Debug.Log ("DRAW TILE!");
+
+		int RNG = Random.Range (0, totalDeck);
+
+		if (RNG < numCross) {
+			curTile = tileCross;
+			//Debug.Log ("Drew cross tile.");
+			numCross--;
+		} else if (RNG < numCross + numTee) {
+			curTile = tileTee;
+			//Debug.Log ("Drew T tile.");
+			numCross--;
+		} else if (RNG < numCross + numTee + numStraight) {
+			curTile = tileStraight;
+			//Debug.Log ("Drew straight tile.");
+			numStraight--;
+		} else if (RNG < numCross + numTee + numStraight + numBend) {
+			curTile = tileBend;
+			//Debug.Log ("Drew bend tile.");
+			numBend--;
+		} else if (RNG < numCross + numTee + numStraight + numBend + numDead) {
+			curTile = tileDead;
+			//Debug.Log ("Drew deadend tile.");
+			numDead--;
+		} else {
+			curTile = null;
+			//Debug.Log("RNG out of range");
+		}
+		
+		return curTile;
 	}
 }
