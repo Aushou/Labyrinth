@@ -44,7 +44,6 @@ public class PlacementGhost : MonoBehaviour {
 			myType.GetComponent<Tile>().Rotate();
 			rotation ++;
 			GetComponent<Transform> ().rotation = Quaternion.Euler (0, 0, rotation * -90);
-			Debug.Log ("Rotation: " + rotation + ", By 90: " + rotation * -90);
 		}
 
 		if (adjacent && !overlap) {
@@ -59,23 +58,38 @@ public class PlacementGhost : MonoBehaviour {
 			} else {
 				validSides[0] = true;
 			}
-			Debug.Log ("Top alligned: " + validSides[0]);
-			//ray = Physics2D.Raycast (myPos, Vector2.right, 0.7f);
-			/*if (Physics2D.Raycast (ray, out hit)){
+			if (Physics2D.Raycast (myPos, Vector2.right, 0.7f)){
+				hit = Physics2D.Raycast (myPos, Vector2.right, 0.7f);
 				validSides[1] = hit.transform.gameObject.GetComponent<Tile>().GetWest () && myType.GetComponent<Tile>().GetEast ();
 			} else {
 				validSides[1] = true;
-			}*/
+			}
+			if (Physics2D.Raycast (myPos, Vector2.down, 0.7f)){
+				hit = Physics2D.Raycast (myPos, Vector2.down, 0.7f);
+				validSides[2] = hit.transform.gameObject.GetComponent<Tile>().GetNorth () && myType.GetComponent<Tile>().GetNorth();
+			} else {
+				validSides[2] = true;
+			}
+			if (Physics2D.Raycast (myPos, Vector2.left, 0.7f)){
+				hit = Physics2D.Raycast (myPos, Vector2.left, 0.7f);
+				validSides[3] = hit.transform.gameObject.GetComponent<Tile>().GetEast() && myType.GetComponent<Tile>().GetWest();
+			} else {
+				validSides[3] = true;
+			}
 
-			valid = true;
-			mySprite.color = Color.blue;
+			if(validSides[1]&&validSides[2]&&validSides[3] && validSides[0]){
+				valid = true;
+				mySprite.color = Color.blue;
+			} else{
+				valid = false;
+				mySprite.color = Color.red;
+			}
 		} else {
 			valid = false;
 			mySprite.color = Color.red;
 		}
 
 		if (valid && Input.GetMouseButtonDown (0)) {
-			Debug.Log ("Place tile at: " + myPos);
 			Instantiate (myType , myPos, Quaternion.Euler (0, 0, (-90 * rotation)));
 			//turnStage++;
 			Destroy (gameObject);

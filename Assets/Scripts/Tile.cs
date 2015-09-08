@@ -31,7 +31,6 @@ public class Tile : MonoBehaviour {
 
 	public bool GetSouth(){
 		return south;
-		Debug.Log ("South gate: " + south);
 	}
 
 	public bool GetWest(){
@@ -54,7 +53,5 @@ public class Tile : MonoBehaviour {
 		west = tempS;
 
 		GetComponent<Transform> ().Rotate (0, 0, 90);
-
-		Debug.Log ("Rotating...");
 	}
 }
