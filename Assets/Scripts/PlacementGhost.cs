@@ -76,6 +76,8 @@ public class PlacementGhost : MonoBehaviour {
 				validSides[3] = true;
 			}
 
+			Debug.Log ("Up: " + validSides[0] + "Right: " + validSides[1] + "Down: " + validSides[2]  + "Left: " + validSides[3]);
+
 			if(validSides[1]&&validSides[2]&&validSides[3] && validSides[0]){
 				valid = true;
 				mySprite.color = Color.blue;
