@@ -120,30 +120,44 @@ public class Player : MonoBehaviour {
 
 	// check if movement is valid
 	bool checkValid(){
-		// north
-		Vector3 north = players[curPlayer-1].transform.position;
-		north.y++;
-		if (player_ghost.transform.position == north) {
-			return true;
+
+		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+		// check if hit tile
+		if(hit.collider != null)
+		{
+
+			Tile _t = hit.collider.gameObject.GetComponent<Tile>();
+
+			if(_t !=null){
+			
+				// north
+				Vector3 north = players[curPlayer-1].transform.position;
+				north.y++;
+				if (player_ghost.transform.position == north && _t.GetSouth()) {
+					return true;
+				}
+				// south
+				Vector3 south = players[curPlayer-1].transform.position;
+				south.y--;
+				if (player_ghost.transform.position == south && _t.GetNorth()) {
+					return true;
+				}
+				// east
+				Vector3 east = players[curPlayer-1].transform.position;
+				east.x--;
+				if (player_ghost.transform.position == east && _t.GetWest()) {
+					return true;
+				}
+				// west
+				Vector3 west = players[curPlayer-1].transform.position;
+				west.x++;
+				if (player_ghost.transform.position == west && _t.GetEast()) {
+					return true;
+				}
+			}
 		}
-		// south
-		Vector3 south = players[curPlayer-1].transform.position;
-		south.y--;
-		if (player_ghost.transform.position == south) {
-			return true;
-		}
-		// east
-		Vector3 east = players[curPlayer-1].transform.position;
-		east.x--;
-		if (player_ghost.transform.position == east) {
-			return true;
-		}
-		// west
-		Vector3 west = players[curPlayer-1].transform.position;
-		west.x++;
-		if (player_ghost.transform.position == west) {
-			return true;
-		}
+
 		return false;
 	}
 
