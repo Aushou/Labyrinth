@@ -53,6 +53,7 @@ public class GameLogic : MonoBehaviour {
 				curPlayer++;						//Move to next player
 			}
 			else{
+				GetComponent<Player>().MinotaurMode = true;
 				curPlayer = 1;						//Move to the next player and turn if it's currently the last player's turn
 				curTurn++;
 			}
@@ -65,6 +66,7 @@ public class GameLogic : MonoBehaviour {
 				curPlayer++;						//Move to next player
 			}
 			else{
+				GetComponent<Player>().MinotaurMode = true;
 				curPlayer = 1;						//Move to the next player and turn if it's currently the last player's turn
 				curTurn++;
 			}
