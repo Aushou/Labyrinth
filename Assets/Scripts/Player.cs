@@ -12,12 +12,18 @@ public class Player : MonoBehaviour {
 	public GameObject player_3;
 	public GameObject player_4;
 	public GameObject player_ghost;
+	public GameObject minotaur;
+	public GameObject rollButton;
 
 	private int curPlayer = 1;
+	private int playerMove = 2;
+	private bool rolled = false;
+	private int minotaurMove = 0;
 	private GameLogic _gL;
 	private Camera mainCam;
-	
-	public bool MovementMode = true;
+
+	public bool MinotaurMode = false;
+	public bool MovementMode = false;
 
 	// initiation
 	void Start(){
@@ -32,6 +38,7 @@ public class Player : MonoBehaviour {
 		players.Add (player_3);
 		players.Add (player_4);
 		player_ghost.SetActive (false);
+		rollButton.SetActive (false);
 
 		// randomly assign positions
 		int[] givenPos = new int[player_num];
@@ -87,17 +94,15 @@ public class Player : MonoBehaviour {
 			}
 			k++;
 		}
+
+		minotaur.transform.position = new Vector3 (20, 15, 0);
 	}
 
 	// place a ghost at where the mouse is
-	void PlayerGhost() {
+	void PlayerGhost(GameObject character) {
 		TrackMouse ();
 
-		bool overlap = false;
-		bool adjacent = false;
-		Vector2 ghost_pos = player_ghost.transform.position;
-
-		if (checkValid()) {
+		if (checkValid(character)) {
 			player_ghost.GetComponent<SpriteRenderer> ().color = Color.green;
 		}else{
 			player_ghost.GetComponent<SpriteRenderer> ().color = Color.red;
@@ -119,7 +124,7 @@ public class Player : MonoBehaviour {
 	}
 
 	// check if movement is valid
-	bool checkValid(){
+	bool checkValid(GameObject character){
 
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
@@ -132,25 +137,25 @@ public class Player : MonoBehaviour {
 			if(_t !=null){
 			
 				// north
-				Vector3 north = players[curPlayer-1].transform.position;
+				Vector3 north = character.transform.position;
 				north.y++;
 				if (player_ghost.transform.position == north && _t.GetSouth()) {
 					return true;
 				}
 				// south
-				Vector3 south = players[curPlayer-1].transform.position;
+				Vector3 south = character.transform.position;
 				south.y--;
 				if (player_ghost.transform.position == south && _t.GetNorth()) {
 					return true;
 				}
 				// east
-				Vector3 east = players[curPlayer-1].transform.position;
+				Vector3 east = character.transform.position;
 				east.x--;
 				if (player_ghost.transform.position == east && _t.GetWest()) {
 					return true;
 				}
 				// west
-				Vector3 west = players[curPlayer-1].transform.position;
+				Vector3 west = character.transform.position;
 				west.x++;
 				if (player_ghost.transform.position == west && _t.GetEast()) {
 					return true;
@@ -164,6 +169,19 @@ public class Player : MonoBehaviour {
 	// actually move the player
 	public void MovePlayer(){
 		players [curPlayer - 1].transform.position = player_ghost.transform.position;
+		playerMove--;
+	}
+
+	public void RollDice(){
+		minotaurMove = Random.Range (0, 6) + 1;
+		rolled = true;
+		rollButton.SetActive(false);
+	}
+
+	// actually move the minotaur
+	public void MoveMinotaur(){
+		minotaur.transform.position = player_ghost.transform.position;
+		minotaurMove--;
 	}
 
 	// Update is called once per frame
@@ -171,10 +189,32 @@ public class Player : MonoBehaviour {
 		if (MovementMode) {
 			//curPlayer = _gL.curPlayer;
 			player_ghost.SetActive(true);
-			PlayerGhost();
-			if (checkValid() && Input.GetMouseButtonDown (0)) {
+			PlayerGhost(players[curPlayer-1]);
+			if (checkValid(players[curPlayer-1]) && Input.GetMouseButtonDown (0)) {
 				MovePlayer();
+				if(playerMove == 0){
+					MovementMode = false;
+					playerMove = 2;
+					player_ghost.SetActive(false);
+				}
 			}
+		}
+		if (MinotaurMode) {
+			if (!rolled) {
+				rollButton.SetActive (true);
+			} else {
+				player_ghost.SetActive (true);
+				PlayerGhost (minotaur);
+				if (checkValid (minotaur) && Input.GetMouseButtonDown (0)) {
+					MoveMinotaur ();
+					if (minotaurMove == 0) {
+						MinotaurMode = false;
+						player_ghost.SetActive (false);
+					}
+				}
+			}
+		} else {
+			rollButton.SetActive(false);
 		}
 	}
 }
