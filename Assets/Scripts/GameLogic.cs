@@ -15,7 +15,7 @@ public class GameLogic : MonoBehaviour {
 	public GameObject tileWall;
 	public GameObject ghostTile;	//Stores the prefab for the placement ghost tile
 
-	private int curPlayer;			//The player whose turn it currently is
+	public int curPlayer = 1;			//The player whose turn it currently is
 	private int curTurn = 1;		//Current turn. May not be useful, but it's here
 	private Camera mainCam;			//Reference to camera component of the Main Camera object
 	private GameObject tempGhost;
@@ -40,6 +40,24 @@ public class GameLogic : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.P) && turnStage < 2) {
 			PlaceGhost (testTile);
+		}
+
+		if (turnStage == 2) {
+			GetComponent<Player> ().MovementMode = true;
+		} else {
+			GetComponent<Player> ().MovementMode = false;
+		}
+
+		if (turnStage == 3) {
+			if(curPlayer < maxPlayers){
+				curPlayer++;						//Move to next player
+			}
+			else{
+				curPlayer = 1;						//Move to the next player and turn if it's currently the last player's turn
+				curTurn++;
+			}
+			turnStage = 0;
+			Debug.Log("Current Player: " + curPlayer + " Current Turn: " + curTurn);
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space)) {		//Space to skip/end turn and move to the next player

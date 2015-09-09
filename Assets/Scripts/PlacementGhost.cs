@@ -52,7 +52,6 @@ public class PlacementGhost : MonoBehaviour {
 
 			if (Physics2D.Raycast(myPos, Vector2.up, 0.7f)){
 				hit = Physics2D.Raycast (myPos, Vector2.up, 0.7f);
-				//Debug.Log (hit.transform.gameObject.GetComponent<Tile>().south);
 				validSides[0] = hit.transform.gameObject.GetComponent<Tile>().GetSouth () && myType.GetComponent<Tile>().GetNorth();
 			} else {
 				validSides[0] = true;
@@ -76,8 +75,6 @@ public class PlacementGhost : MonoBehaviour {
 				validSides[3] = true;
 			}
 
-			Debug.Log ("Up: " + validSides[0] + "Right: " + validSides[1] + "Down: " + validSides[2]  + "Left: " + validSides[3]);
-
 			if(validSides[1]&&validSides[2]&&validSides[3] && validSides[0]){
 				valid = true;
 				mySprite.color = Color.blue;
@@ -96,7 +93,6 @@ public class PlacementGhost : MonoBehaviour {
 			Destroy (gameObject);
 		}
 
-		//Debug.Log ("Adjacent: " + adjacent + ", Overlap: " + overlap);
 	}
 
 	void TrackMouse(){
@@ -124,7 +120,6 @@ public class PlacementGhost : MonoBehaviour {
 	}
 
 	public void SetMyGL(GameLogic newGL){
-		Debug.Log ("Set myGL!");
 		myGL = newGL;
 	}
 }

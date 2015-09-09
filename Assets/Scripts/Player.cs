@@ -192,13 +192,14 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (MovementMode) {
-			//curPlayer = _gL.curPlayer;
+			curPlayer = _gL.curPlayer;
 			player_ghost.SetActive(true);
 			PlayerGhost(players[curPlayer-1]);
 			if (checkValid(players[curPlayer-1]) && Input.GetMouseButtonDown (0)) {
 				MovePlayer();
 				if(playerMove == 0){
 					MovementMode = false;
+					GetComponent<GameLogic> ().turnStage++;
 					playerMove = 2;
 					player_ghost.SetActive(false);
 				}
