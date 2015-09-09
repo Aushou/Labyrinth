@@ -4,7 +4,7 @@ using System.Collections;
 public class PlacementGhost : MonoBehaviour {
 
 	public SpriteRenderer mySprite;
-	public GameLogic myGL;
+	public GameLogic myGL = null;
 	private Camera mainCam;			//Reference to camera component of the Main Camera object
 
 
@@ -15,7 +15,6 @@ public class PlacementGhost : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		mySprite = GetComponent<SpriteRenderer> ();
-		myGL = GetComponentInParent<GameLogic> ();
 	}
 	
 	// Update is called once per frame
@@ -91,7 +90,7 @@ public class PlacementGhost : MonoBehaviour {
 
 		if (valid && Input.GetMouseButtonDown (0)) {
 			Instantiate (myType , myPos, Quaternion.Euler (0, 0, (-90 * rotation)));
-			//turnStage++;
+			myGL.IncrementStage();
 			Destroy (gameObject);
 		}
 
@@ -120,5 +119,10 @@ public class PlacementGhost : MonoBehaviour {
 
 	public void SetCamera(Camera myCam){
 		mainCam = myCam;
+	}
+
+	public void SetMyGL(GameLogic newGL){
+		Debug.Log ("Set myGL!");
+		myGL = newGL;
 	}
 }

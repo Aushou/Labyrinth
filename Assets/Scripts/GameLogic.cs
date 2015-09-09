@@ -38,7 +38,7 @@ public class GameLogic : MonoBehaviour {
 
 		totalDeck = numCross + numTee + numStraight + numBend + numDead;
 
-		if (Input.GetKeyDown (KeyCode.P)) {
+		if (Input.GetKeyDown (KeyCode.P) && turnStage < 2) {
 			PlaceGhost (testTile);
 		}
 
@@ -71,6 +71,7 @@ public class GameLogic : MonoBehaviour {
 
 		tempGhost = (GameObject)Instantiate (ghostTile, mousePos, Quaternion.identity);
 		tempGhost.GetComponent<PlacementGhost> ().SetCamera (mainCam);
+		tempGhost.GetComponent<PlacementGhost> ().SetMyGL (GetComponent<GameLogic>());
 
 		//if (!tempGhost.GetComponent<PlacementGhost> ().TypeFlag ()) {
 			tempGhost.GetComponent<PlacementGhost> ().SetTile (DrawTile ());
@@ -114,5 +115,9 @@ public class GameLogic : MonoBehaviour {
 		}
 		
 		return curTile;
+	}
+
+	public void IncrementStage(){
+		turnStage++;
 	}
 }
