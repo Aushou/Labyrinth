@@ -57,6 +57,9 @@ public class GameLogic : MonoBehaviour {
 				curPlayer = 1;						//Move to the next player and turn if it's currently the last player's turn
 				curTurn++;
 			}
+			if (!GetComponent<Player>().MinotaurMode = false){
+				turnStage = 0;
+			}
 			turnStage = 0;
 			Debug.Log("Current Player: " + curPlayer + " Current Turn: " + curTurn);
 		}
