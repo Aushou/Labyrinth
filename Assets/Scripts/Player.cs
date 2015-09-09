@@ -120,7 +120,6 @@ public class Player : MonoBehaviour {
 
 	// check if movement is valid
 	bool checkValid(){
-
 		// north
 		Vector3 north = players[curPlayer-1].transform.position;
 		north.y++;
@@ -150,7 +149,7 @@ public class Player : MonoBehaviour {
 
 	// actually move the player
 	public void MovePlayer(){
-		
+		players [curPlayer - 1].transform.position = player_ghost.transform.position;
 	}
 
 	// Update is called once per frame
@@ -159,6 +158,9 @@ public class Player : MonoBehaviour {
 			//curPlayer = _gL.curPlayer;
 			player_ghost.SetActive(true);
 			PlayerGhost();
+			if (checkValid() && Input.GetMouseButtonDown (0)) {
+				MovePlayer();
+			}
 		}
 	}
 }
