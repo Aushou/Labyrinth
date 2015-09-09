@@ -18,6 +18,7 @@ public class Player : MonoBehaviour {
 	private int curPlayer = 1;
 	private int playerMove = 2;
 	private bool rolled = false;
+	private int diceNum = 3;
 	private int minotaurMove = 0;
 	private GameLogic _gL;
 	private Camera mainCam;
@@ -173,9 +174,10 @@ public class Player : MonoBehaviour {
 	}
 
 	public void RollDice(){
-		minotaurMove = Random.Range (0, 6) + 1;
+		minotaurMove = Random.Range (0, diceNum) + 1;
 		rolled = true;
 		rollButton.SetActive(false);
+		diceNum++;
 	}
 
 	// actually move the minotaur
