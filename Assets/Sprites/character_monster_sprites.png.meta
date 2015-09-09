@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: 94b08fdc741fc0b4fa94ff4786bdf387
+timeCreated: 1441803862
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_1_forward_0
+    21300002: player_1_forward_1
+    21300004: player_1_forward_3
+    21300006: player_1_forward_4
+    21300008: player_2_forward_0
+    21300010: player_2_forward_1
+    21300012: player_2_forward_3
+    21300014: player_2_forward_4
+    21300016: player_3_forward_0
+    21300018: player_3_forward_1
+    21300020: player_3_forward_2
+    21300022: player_1_left_0
+    21300024: player_1_left_1
+    21300026: player_1_left_2
+    21300028: player_1_left_3
+    21300030: player_2_left_0
+    21300032: player_2_left_1
+    21300034: player_2_left_2
+    21300036: player_2_left_3
+    21300038: player_3_left_0
+    21300040: player_3_left_1
+    21300042: player_3_left_2
+    21300044: player_1_right_0
+    21300046: player_1_right_1
+    21300048: player_1_right_2
+    21300050: player_1_right_3
+    21300052: player_2_right_0
+    21300054: player_2_right_1
+    21300056: player_2_right_2
+    21300058: player_2_right_3
+    21300060: player_3_right_0
+    21300062: player_3_right_1
+    21300064: player_3_right_2
+    21300066: player_1_backward_0
+    21300068: player_1_backward_1
+    21300070: player_1_backward_2
+    21300072: player_1_backward_3
+    21300074: player_2_backward_0
+    21300076: player_2_backward_1
+    21300078: player_2_backward_2
+    21300080: player_2_backward_3
+    21300082: player_3_backward_0
+    21300084: player_3_backward_1
+    21300086: player_3_backward_2
+    21300088: player_4_forward_0
+    21300090: player_4_forward_1
+    21300092: player_4_forward_2
+    21300094: player_4_forward_3
+    21300096: Minotaur_forward_0
+    21300098: Minotaur_forward_1
+    21300100: Minotaur_forward_2
+    21300102: Minotaur_forward_3
+    21300104: player_3_forward_3
+    21300106: player_4_left_0
+    21300108: player_4_left_1
+    21300110: player_4_left_2
+    21300112: player_4_left_3
+    21300114: Minotaur_left_0
+    21300116: Minotaur_left_1
+    21300118: Minotaur_left_2
+    21300120: Minotaur_left_3
+    21300122: player_3_left_3
+    21300124: player_4_right_0
+    21300126: player_4_right_1
+    21300128: player_4_right_2
+    21300130: player_4_right_3
+    21300132: Minotaur_right_0
+    21300134: Minotaur_right_1
+    21300136: Minotaur_right_2
+    21300138: Minotaur_right_3
+    21300140: player_3_right_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_1_forward_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_forward_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_forward_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_forward_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_forward_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_forward_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_forward_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_forward_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_forward_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_forward_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_forward_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_left_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_left_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_left_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_left_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_left_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_left_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 225
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_left_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_left_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_left_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_left_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_right_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_right_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 187
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_right_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_right_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_right_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_right_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_right_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_right_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_right_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_right_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_backward_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_backward_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_backward_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 149
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_1_backward_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_backward_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_backward_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_backward_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_2_backward_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_backward_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_backward_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 147
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_backward_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_forward_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_forward_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_forward_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 111
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_forward_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_forward_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_forward_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_forward_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_forward_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_forward_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_left_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_left_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_left_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_left_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_left_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_left_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_left_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_left_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_right_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_right_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_right_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_right_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_right_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_right_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_right_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_right_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 187
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: 1b10a0e1daa22514384bc8aaaa30510d
+timeCreated: 1441803760
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: character_monster_sprites2_0
+    21300002: character_monster_sprites2_1
+    21300004: character_monster_sprites2_2
+    21300006: character_monster_sprites2_3
+    21300008: character_monster_sprites2_4
+    21300010: character_monster_sprites2_5
+    21300012: character_monster_sprites2_6
+    21300014: character_monster_sprites2_7
+    21300016: character_monster_sprites2_8
+    21300018: character_monster_sprites2_9
+    21300020: character_monster_sprites2_10
+    21300022: character_monster_sprites2_11
+    21300024: character_monster_sprites2_12
+    21300026: character_monster_sprites2_13
+    21300028: character_monster_sprites2_14
+    21300030: character_monster_sprites2_15
+    21300032: character_monster_sprites2_16
+    21300034: character_monster_sprites2_17
+    21300036: character_monster_sprites2_18
+    21300038: character_monster_sprites2_19
+    21300040: character_monster_sprites2_20
+    21300042: character_monster_sprites2_21
+    21300044: character_monster_sprites2_22
+    21300046: character_monster_sprites2_23
+    21300048: character_monster_sprites2_24
+    21300050: character_monster_sprites2_25
+    21300052: character_monster_sprites2_26
+    21300054: character_monster_sprites2_27
+    21300056: character_monster_sprites2_28
+    21300058: character_monster_sprites2_29
+    21300060: character_monster_sprites2_30
+    21300062: character_monster_sprites2_31
+    21300064: character_monster_sprites2_32
+    21300066: character_monster_sprites2_33
+    21300068: character_monster_sprites2_34
+    21300070: character_monster_sprites2_35
+    21300072: character_monster_sprites2_36
+    21300074: character_monster_sprites2_37
+    21300076: character_monster_sprites2_38
+    21300078: character_monster_sprites2_39
+    21300080: character_monster_sprites2_40
+    21300082: character_monster_sprites2_41
+    21300084: character_monster_sprites2_42
+    21300086: player_3_backward_3
+    21300088: character_monster_sprites2_44
+    21300090: character_monster_sprites2_45
+    21300092: character_monster_sprites2_46
+    21300094: character_monster_sprites2_47
+    21300096: character_monster_sprites2_48
+    21300098: character_monster_sprites2_49
+    21300100: character_monster_sprites2_50
+    21300102: character_monster_sprites2_51
+    21300104: character_monster_sprites2_52
+    21300106: character_monster_sprites2_53
+    21300108: character_monster_sprites2_54
+    21300110: character_monster_sprites2_55
+    21300112: character_monster_sprites2_56
+    21300114: character_monster_sprites2_57
+    21300116: character_monster_sprites2_58
+    21300118: character_monster_sprites2_59
+    21300120: character_monster_sprites2_60
+    21300122: character_monster_sprites2_61
+    21300124: player_4_backward_0
+    21300126: player_4_backward_1
+    21300128: player_4_backward_2
+    21300130: player_4_backward_3
+    21300132: Minotaur_backward_0
+    21300134: Minotaur_backward_1
+    21300136: Minotaur_backward_2
+    21300138: Minotaur_backward_3
+    21300140: character_monster_sprites2_70
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: character_monster_sprites2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_5
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_9
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 262
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_18
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_20
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_21
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 224
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_24
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_25
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_26
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_27
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_28
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 186
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_34
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_35
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_36
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_38
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_39
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_40
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_41
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_42
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 148
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_3_backward_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 149
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_45
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_46
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_47
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_48
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_49
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_50
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_51
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_52
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 110
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_54
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_55
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_56
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_58
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_59
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_60
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_61
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 72
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_backward_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_backward_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_backward_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_4_backward_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_backward_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_backward_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_backward_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Minotaur_backward_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_monster_sprites2_70
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 34
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
